@@ -137,7 +137,7 @@ namespace PharmacyProject
                             if (existPharmacy == null)
                             {
                                 Easy.Print("the drug is not created pharmacy", ConsoleColor.Red);
-                                goto case 2;
+                                goto beginning;
                             }
 
                             Easy.Print("Enter drug's name : ", ConsoleColor.Green);
