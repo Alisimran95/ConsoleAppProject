@@ -53,8 +53,8 @@ namespace PharmacyProject.Models
 
         public bool InfoDrug(string drugname)
         {
-            var students = _drugList.FindAll(x => x.Name.ToLower().Contains(drugname.Trim().ToLower()));
-            if (students.Count == 0)
+            var druglist = _drugList.FindAll(x => x.Name.ToLower().Contains(drugname.Trim().ToLower()));
+            if (druglist.Count == 0)
             {
                 Easy.Print("Nothing found", ConsoleColor.Red);
                 return false;
