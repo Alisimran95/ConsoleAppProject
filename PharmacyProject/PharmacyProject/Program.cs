@@ -139,7 +139,6 @@ namespace PharmacyProject
                                 Easy.Print("the drug is not created pharmacy", ConsoleColor.Red);
                                 goto beginning;
                             }
-
                             Easy.Print("Enter drug's name : ", ConsoleColor.Green);
                             string nameOfDrug = Console.ReadLine();
                             existPharmacy.InfoDrug(nameOfDrug);
